@@ -1,0 +1,133 @@
+<% if @development.is_sold? %>
+	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %>  - SOLD</h2>
+<% elsif @development.is_in_contract? %>
+	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %>  - IN CONTRACT</h2>
+<% elsif @development.is_under_review? %>
+	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %>  - UNDER ATTORNEY REVIEW</h2>
+<% else %>
+	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %></h2>
+<% end %>
+
+<div class="span8 welcome-image">
+  <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <% if @development.asset3!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    	<% end %>
+      <% if @development.asset4!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+    	<% end %>
+      <% if @development.asset5!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+    	<% end %>
+      <% if @development.asset6!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+    	<% end %>
+      <% if @development.asset7!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="5" class=""></li>
+    	<% end %>
+      <% if @development.asset8!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="6" class=""></li>
+    	<% end %>
+      <% if @development.asset9!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="7" class=""></li>
+    	<% end %>
+      <% if @development.asset10!="" %>
+      	<li data-target="#carousel-example-generic" data-slide-to="8" class=""></li>
+    	<% end %>
+	  </ol>
+  <!-- Carousel items -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="active item" style="height:400px">
+	      <img style="height:400px; width:100%" src="<%= @development.asset2 %>">
+	    </div>
+	    <% if @development.asset3!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset3 %>">
+	    	</div>
+    	<% end %>
+	    <% if @development.asset4!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset4 %>">
+	    	</div>
+    	<% end %>
+	    <% if @development.asset5!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset5 %>">
+	    	</div>
+    	<% end %>
+	    <% if @development.asset6!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset6 %>">
+	    	</div>
+    	<% end %>
+	    <% if @development.asset7!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset7 %>">
+	    	</div>
+    	<% end %>
+	    <% if @development.asset8!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset8 %>">
+	    	</div>
+    	<% end %>
+	    <% if @development.asset9!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset9 %>">
+	    	</div>
+    	<% end %>
+	    <% if @development.asset10!="" %>
+	    	<div class="item">
+	      	<img style="height:400px; width:100%" src="<%= @development.asset10 %>">
+	    	</div>
+    	<% end %>
+  	</div>
+	</div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev" style="line-height: 417px; height: 430px; font-size: 46px; padding-right: 56px; margin-top:-49px">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next" style="line-height: 417px; height: 430px; font-size: 46px; padding-left: 58px; margin-top:-49px">&rsaquo;</a>
+</div>
+
+<div class="row text-center" style="max-width: 100%; display:block; height: 140px; margin-top: 15px; margin-left: 1px;">
+	<div class="col-xs-6">
+		<p style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; font-size:19px">
+			<% broker = @development.brokers.take %>
+			<% if broker %>
+			<%= broker.first_name %> 
+			<%= broker.last_name %>
+		</p>
+		<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">Representative, Licensed Real Estate Agent <br /> <%= broker.address.titleize %>, <%= broker.city.titleize %>, <%= broker.state.upcase %> <%= broker.zip.titleize %> <br /> C: <%= broker.cell %> &nbsp; O: <%= broker.office %> <br /> E: <%= broker.email %>
+		</p>
+	</div>
+	<% end %>
+	<div class="col-xs-6">
+		<p style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; font-size:19px">
+			<%= @development.city.capitalize %>, 
+			<%= @development.state.upcase %>
+		</p>
+		<p style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">
+			Price: <%= @development.price.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse.prepend('$') %>
+			<br />
+			Bedrooms: <%= @development.bedroom %> | 
+			Bathrooms: <%= @development.bathroom %>
+			<br />
+			Sqft (approx): <%= @development.sqft %>
+			<br>
+			Listing ID: <%= @development.mls_id %>
+		</p>
+	</div>
+</div>
+<hr style="margin-top: 0px">
+<div class="row text-center" style="max-width: 100%; display:block; margin-top: 12px; margin-left: 1px; margin-bottom: 100px;">
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; text-align:justify"><%= @development.description %></p>
+</div>
+
+<hr style="margin-top: 0px">
+<div class="text-center" style="max-width: 100%; display:block; margin-top: 12px; margin-left: 1px; margin-bottom: 50px;">
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; text-align:center">
+		<% if @development.asset1 %>
+			<a target="_blank" href="<%= @development.asset1 %>">Click here for a video of the property</a>
+		<% end %>
+	</p>
+</div>

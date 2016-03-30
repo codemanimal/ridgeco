@@ -1,0 +1,47 @@
+<div align="left">  
+    <%= simple_form_for @broker, :html => {:class => 'form-horizontal'} do |f| %>          
+        <h6>
+            <%= f.input :username, label: 'User Name', :input_html => {:value => @broker.username} %>
+            <%= f.input :password, label: 'Password', :input_html => {:value => @broker.password} %>
+            <%= f.input :password_confirmation, label: 'Confirm Password', :input_html => {:value => @broker.password_confirmation} %>
+            <%= f.input :is_admin, label: 'Is Admin?', as: :boolean, :input_html => { :value => @broker.is_admin } %>
+            <%= f.input :first_name, label: 'First Name', :input_html => { :value => @broker.first_name } %>
+            <%= f.input :last_name, label: 'Last Name', :input_html => { :value => @broker.last_name } %>
+        </h6>
+        <img class='center-block' style="width:550px; height:400px; max-width:100%; margin-top: 15px; display:block; border:solid; border-width:2px" src="<%= @broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+        <h6>
+            <%= f.input :portrait, label: 'Broker Image URL', :input_html => { :value => @broker.portrait } %>
+        </h6>
+
+        <p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">
+            Representative, Licensed Real Estate Broker
+        </p>
+        <br/>
+        <h6>
+           <%= f.input :address, label: 'Address', :input_html => { :value => @broker.address } %>
+           <%= f.input :city, label: 'City', :input_html => { :value => @broker.city } %>
+           <%= f.input :state, label: 'State', :input_html => { :value => @broker.state } %>
+           <%= f.input :zip, label: 'Zip', :input_html => { :value => @broker.zip } %>
+            <%= f.input :cell, label: 'Cell', :input_html => { :value => @broker.cell } %>
+            <%= f.input :office, label: 'Office', :input_html => { :value => @broker.office } %>
+            <%= f.input :fax, label: 'Fax', :input_html => { :value => @broker.fax } %>
+            <%= f.input :email, label: 'Email', :input_html => { :value => @broker.email } %>
+        </h6>
+        <hr>
+            <%= f.input :about, label: 'About', :input_html => { :value => @broker.about, rows: "15" } %>
+        <div>
+            <br>
+            <%= f.button :submit, 'Update Broker', :class => "btn btn-primary", :data => {confirm: "Are you sure you want to permanently update this broker?"} %>
+        </div>
+    <% end %>
+    <br>
+        <div>
+            <%= button_to "Delete Broker", broker_path(:id => @broker.id), :method => :delete, :class => "btn btn-primary", :data => {confirm: "Are you sure you want to permanently delete this broker?"} %>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</div>

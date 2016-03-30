@@ -1,0 +1,39 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+#
+# You can add environment variables as key/value pairs to config/application.yml:
+#
+# GMAIL_USERNAME: Your_Username
+# The environment variables will be available anywhere in your application as ENV variables:
+#
+# ENV["GMAIL_USERNAME"]
+# This gives you the convenience of using the same variables in code whether they are set by the Unix shell or the figaro gem’s config/application.yml. Variables in the config/application.yml file will override environment variables set in the Unix shell.
+#
+# In tests or other situations where ENV variables might not be appropriate, you can access the configuration values as Figaro method calls:
+#
+# Figaro.env.gmail_username
+# Use this syntax for setting different credentials in development, test, or production environments:
+#
+# HELLO: world
+# development:
+#  HELLO: developers
+# production:
+#  HELLO: users
+# In this case, ENV["HELLO"] will produce “developers” in development, “users” in production and “world” otherwise.
+#
+# Figaro provides a rake task to set the environment variables in the config/application.yml file as Heroku environment variables:
+#
+# rake figaro:heroku
+
+GMAIL_DOMAIN: gmail.com
+GMAIL_USERNAME: ridgecopropertiesinfo@gmail.com
+GMAIL_PASSWORD: 480Sylvan

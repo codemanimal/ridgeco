@@ -1,0 +1,33 @@
+<% if @broker.first_name === "Michael" %>
+
+	<h2 style="text-align:center; margin-top:-25px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @broker.first_name.upcase %> <%= @broker.last_name.upcase %></h2>
+	<img class='center-block' style="width:317px; height:349px; max-width:100%; margin-top: 15px; display:block; border:solid; border-width:2px" src="<%= @broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">Senior Sales Associate <br /> <%= @broker.address.titleize %>, <%= @broker.city.titleize %>, <%= @broker.state.upcase %> <%= @broker.zip.titleize %> <br /> C: <%= @broker.cell %> &nbsp; O: <%= @broker.office %> &nbsp; F: <%= @broker.fax %> <br /> E: <%= @broker.email %></p>
+	<hr>
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; text-align:justify"><%= @broker.about %></p>
+
+<% elsif @broker.first_name === "William" %>
+
+	<h2 style="text-align:center; margin-top:-25px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @broker.first_name.upcase %> <%= @broker.last_name.upcase %></h2>
+	<img class='center-block' style="width:317px; height:349px; max-width:100%; margin-top: 15px; display:block; border:solid; border-width:2px" src="<%= @broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">Owner / Broker <br /> <%= @broker.address.titleize %>, <%= @broker.city.titleize %>, <%= @broker.state.upcase %> <%= @broker.zip.titleize %> <br /> C: <%= @broker.cell %> &nbsp; O: <%= @broker.office %> &nbsp; F: <%= @broker.fax %> <br /> E: <%= @broker.email %></p>
+	<hr>
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; text-align:justify"><%= @broker.about %></p>
+
+<% elsif @broker.first_name === "Kathleen" %>
+
+	<h2 style="text-align:center; margin-top:-25px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @broker.first_name.upcase %> <%= @broker.last_name.upcase %></h2>
+	<img class='center-block' style="width:317px; height:349px; max-width:100%; margin-top: 15px; display:block; border:solid; border-width:2px" src="<%= @broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">Broker Associate <br /> <%= @broker.address.titleize %>, <%= @broker.city.titleize %>, <%= @broker.state.upcase %> <%= @broker.zip.titleize %> <br /> C: <%= @broker.cell %> &nbsp; O: <%= @broker.office %> &nbsp; F: <%= @broker.fax %> <br /> E: <%= @broker.email %></p>
+	<hr>
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; text-align:justify"><%= @broker.about %></p>
+
+<% else %>
+
+	<h2 style="text-align:center; margin-top:-25px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @broker.first_name.upcase %> <%= @broker.last_name.upcase %></h2>
+	<img class='center-block' style="width:317px; height:349px; max-width:100%; margin-top: 15px; display:block; border:solid; border-width:2px" src="<%= @broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">Representative, Licensed Real Estate Salesperson <br /> <%= @broker.address.titleize %>, <%= @broker.city.titleize %>, <%= @broker.state.upcase %> <%= @broker.zip.titleize %> <br /> C: <%= @broker.cell %> &nbsp; O: <%= @broker.office %> &nbsp; F: <%= @broker.fax %> <br /> E: <%= @broker.email %></p>
+	<hr>
+	<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; text-align:justify"><%= @broker.about %></p>
+
+<% end %>

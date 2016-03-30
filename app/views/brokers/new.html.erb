@@ -1,0 +1,32 @@
+<div align="left">  
+    <%= simple_form_for @broker, :html => {:class => 'form-horizontal'} do |f| %>
+       <h6>
+            <%= f.input :username, label: 'User Name' %>
+            <%= f.input :password, label: 'Password' %>
+            <%= f.input :password_confirmation, label: 'Confirm Password' %>
+            <%= f.input :is_admin, as: :boolean, label: 'Is Admin?' %>
+            <%= f.input :first_name, label: 'First Name' %>
+            <%= f.input :last_name, label: 'Last Name' %>
+            <%= f.input :portrait, label: 'Broker Image URL' %>
+            <%= f.input :address, label: 'Address' %>
+            <%= f.input :city, label: 'City' %>
+            <%= f.input :state, label: 'State' %>
+            <%= f.input :zip, label: 'Zip' %>
+            <%= f.input :cell, label: 'Cell' %>
+            <%= f.input :office, label: 'Office' %>
+            <%= f.input :fax, label: 'Fax' %>
+            <%= f.input :email, label: 'Email' %>
+            <%= f.input :about, label: 'About' %>
+        </h6>
+        <div>
+            <br>
+            <%= f.button :submit, 'Create Broker', :class => "btn btn-primary", :data => {confirm: "Are you sure you want to create this broker?"} %>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <% end %>
+</div>

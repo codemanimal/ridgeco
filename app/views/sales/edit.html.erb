@@ -1,0 +1,75 @@
+<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">
+	<%= @listing.address.upcase %>
+</h2>
+	<%= simple_form_for @listing, :html => {:class => 'form-horizontal'} do |f| %>
+		<div>
+			<p>
+				<%= f.input :asset1, label: 'Asset 1', :input_html => { :value => @listing.asset1 } %>
+				<%= f.input :asset2, label: 'Asset 2', :input_html => { :value => @listing.asset2 } %>
+				<%= f.input :asset3, label: 'Asset 3', :input_html => { :value => @listing.asset3 } %>
+				<%= f.input :asset4, label: 'Asset 4', :input_html => { :value => @listing.asset4 } %>
+			</p>
+		</div>
+		<hr>
+		<div>
+			<div>
+				<p style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; font-size:17px">
+					<% broker = @listing.brokers.take %>
+					<%= broker.first_name %> 
+					<%= broker.last_name %>
+				</p>
+				<p style="margin-top:10px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif">Representative, Licensed Real Estate Broker <br /> <%= broker.address.titleize %>, <%= broker.city.titleize %>, <%= broker.state.upcase %> <%= broker.zip.titleize %> <br /> C: <%= broker.cell %> &nbsp; O: <%= broker.office %> <br /> E: <%= broker.email %>
+				</p>
+			</div>
+            Broker:
+            <br>
+                <% @brokers.each do |broker| %>
+                    <% @broker_name = broker.first_name + " " + broker.last_name%>
+                    <% @broker_name_param = broker.username %>
+                    <% params[:broker_name_hash] = @broker_name_param %>
+                    <%= hidden_field_tag @broker_name_param, false %>
+                    <%= check_box_tag @broker_name_param, checked = true %> <%=@broker_name%> </br>
+                <% end %>
+			<div>
+                <p>
+                    <%= f.input :address, label: 'Address', :input_html => { :value => @listing.address.capitalize }%>
+                    <%= f.input :unit, label: 'Unit', :input_html => { :value => @listing.unit.capitalize }%>
+                    <%= f.input :city, label: 'City', :input_html => { :value => @listing.city.capitalize } %> 
+                    <%= f.input :state, label: 'State', :input_html => { :value => @listing.state.capitalize } %>
+                    <%= f.input :price, label: 'Price', :input_html => { :value => @listing.price } %>
+                    <%= f.input :listing_type, label: 'Listing Type', :input_html => { :value => @listing.listing_type } %>
+                    <%= f.input :bedrooms, label: 'Bedrooms', :input_html => { :value => @listing.bedroom } %>
+                    <%= f.input :bathroom, label: 'Bathroom', :input_html => { :value => @listing.bathroom } %>
+                    <%= f.input :sqft, label: 'Square Feet', :input_html => { :value => @listing.sqft } %>
+                    <%= f.input :detail, label: 'Details', :input_html => { :value => @listing.detail.capitalize }%>
+                    <%= f.input :feature, label: 'Feature', :input_html => { :value => @listing.feature.capitalize }%>
+                    <%= f.input :mls_id, label: 'MLS ID', :input_html => { :value => @listing.mls_id }%>
+                    <%= f.input :mls_url, label: 'MLS Url', :input_html => { :value => @listing.mls_url }%>
+                    <%= f.input :is_rental, label: 'Is Rental?', as: :boolean, :input_html => { :value => @listing.is_rental } %>
+                    <%= f.input :is_sale, label: 'Is Sale?', as: :boolean, :input_html => { :value => @listing.is_sale } %>
+                    <%= f.input :is_development, label: 'Is listing?', as: :boolean, :input_html => { :value => @listing.is_development } %>
+                    <%= f.input :is_featured, label: 'Is Featured?', as: :boolean, :input_html => { :value => @listing.is_featured } %>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <%= f.input :description, label: 'Description', :input_html => { :value => @listing.description, rows: "15" } %>
+        <br>
+        <div>
+            <%= f.button :submit, 'Update Listing', :controller => 'developments', :action => 'update', :class => "btn btn-primary", :data => {confirm: "Are you sure you want to permanently update this listing?"} %>
+        </div>
+    <% end %>
+        <br>
+        <%= button_to "Delete Listing", listing_path(:id => @listing.id), :method => :delete, :class => "btn btn-primary", :data => {confirm: "Are you sure you want to permanently delete this listing?"} %>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>

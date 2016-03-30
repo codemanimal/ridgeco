@@ -1,0 +1,62 @@
+	<%= simple_form_for @listing, :html => {:class => 'form-horizontal'} do |f| %>
+		<div>
+			<p>
+				<%= f.input :asset1, label: 'Asset 1'  %>
+				<%= f.input :asset2, label: 'Asset 2'  %>
+				<%= f.input :asset3, label: 'Asset 3'  %>
+				<%= f.input :asset4, label: 'Asset 4'  %>
+			</p>
+		</div>
+		<hr>
+		<div>
+            <p>
+            Broker:
+            <br>
+                <% @brokers.each do |broker| %>
+                    <% @broker_name = broker.first_name + " " + broker.last_name%>
+                    <% @broker_name_param = broker.username %>
+                    <% params[:broker_name_hash] = @broker_name_param %>
+                    <%= hidden_field_tag @broker_name_param, false %>
+                    <%= check_box_tag @broker_name_param, checked = true %> <%=@broker_name%> </br>
+                <% end %>
+            </p>
+            <p>
+                <%= f.input :name, label: 'Name' %>
+                <%= f.input :address, label: 'Address' %>
+                <%= f.input :unit, label: 'Unit' %>
+                <%= f.input :city, label: 'City'  %> 
+                <%= f.input :state, label: 'State'  %>
+                <%= f.input :price, label: 'Price'  %>
+                <%= f.input :listing_type, label: 'Listing Type'  %>
+                <%= f.input :bedroom, label: 'Bedrooms'  %>
+                <%= f.input :bathroom, label: 'Bathroom'  %>
+                <%= f.input :sqft, label: 'Square Feet'  %>
+                <%= f.input :detail, label: 'Details' %>
+                <%= f.input :feature, label: 'Feature' %>
+                <%= f.input :mls_id, label: 'MLS I' %>
+                <%= f.input :mls_url, label: 'MLS Url' %>
+                <%= f.input :is_rental, label: 'Is Rental?', as: :boolean  %>
+                <%= f.input :is_sale, label: 'Is Sale?', as: :boolean  %>
+                <%= f.input :is_development, label: 'Is listing?', as: :boolean  %>
+                <%= f.input :is_featured, label: 'Is Featured?', as: :boolean  %>
+            </p>
+        </div>
+        <hr>
+        <%= f.input :description, label: 'Description', :input_html => { rows: "15" } %>
+        <br>
+        <div>
+            <%= f.button :submit, 'Create Listing', :class => "btn btn-primary", :data => {confirm: "Are you sure you want to create this listing?"} %>
+        </div>
+    <% end %>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>

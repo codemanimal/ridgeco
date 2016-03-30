@@ -1,0 +1,71 @@
+<div align="center">	
+	<p style="font-size:17px; text-align:justify">
+	For more information about any of our services please contact us:
+	</p>
+	<br>
+	<ol style="font-size:17px; text-align:center; list-style-type:none">
+		<li>Ridgeco Properties</li>
+		<li>480 Sylvan Avenue</li>
+		<li>Englewood Cliffs, NJ 07632</li>
+		<li>E: William@ridgecoproperties.com</li>
+		<li>T: (201) 568-4450 | F: (201) 568-4486</li>
+	</ol>
+</div>
+<hr>
+<p style="font-size:17px; text-align:justify">
+Or leave us a message below and we'll get back to you right away:
+</p>
+<div align="left">	
+	<%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
+		<%= f.input :name, label: 'Name:', placeholder: ' Required', :required => true %>
+		<br>
+		<%= f.input :email, label: 'Email:', placeholder: ' Required', :required => true %>
+		<br>
+		<%= f.input :phone, label: 'Phone Number:', placeholder: ' Required', :required => true %>
+		<br>
+		<%= f.input :listing_id, label: 'Listing ID:', placeholder: ' Optional' %>
+		<br>
+		<%= f.input :message, label: 'Message:', placeholder: ' Optional', :as => :text%>
+		<br>
+		<div class="hidden">
+			<%= f.input :nickname, :hint => 'Leave this field blank!' %>
+		</div>
+		<div style="margin-top:-5px; margin-bottom:20px;">
+			<br>
+			<%= f.button :submit, 'Send Message', :class => "btn btn-primary", :style=>"width:100%; background-color:white; color: black; border-color: black; font-family:'Century Gothic',CenturyGothic,AppleGothic,sans-serif;" %>
+		</div>
+	<% end %>
+</div>
+
+
+
+<!-- 
+
+
+<%=form_tag	do %>
+
+	<%= label_tag "Name" %>
+	<%= text_field_tag :name, placeholder: "Required" %>
+	<br>
+	<br>
+	<%= label_tag "Phone" %>
+	<%= telephone_field :phone, placeholder: "Required" %>
+	<br>
+	<br>
+	<%= label_tag "Email" %>
+	<%= email_field :email, placeholder: "Required" %>
+	<br>
+	<br>
+	<%= label_tag "Property ID" %>
+	<%= number_field :prop_id, placeholder: "Optional" %>
+	<br>
+	<br>
+	<%= label_tag "Message" %>
+	<%= text_area_tag :message, size: "24x24", placeholder: "How can we help?" %>
+	<br>
+	<br>
+	<%= submit_tag "Submit", :class=>"btn btn-success" %>
+
+<% end %> 
+
+-->

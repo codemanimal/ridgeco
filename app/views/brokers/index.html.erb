@@ -1,0 +1,337 @@
+<h3 style="font-weight:normal; margin-bottom:15px; margin-top:-1px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif;">GET TO KNOW OUR EXPERIENCED REAL ESTATE TEAM</h3>
+
+<% if current_user && current_user.is_admin %>
+	<a href="/brokers/new">
+		<button class="btn btn-primary">Create New Broker</button>
+	</a>
+<% end %>
+<br>
+<br>
+
+<% brokers = @brokers.order(:first_name) %>
+
+<div class="row" style="max-width: 100%; display:block; height: auto; margin-top:-15px">
+	<div class="col-xs-4">
+		<% if brokers[0] %>
+			<% broker = brokers[0] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-4px;" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+</div>
+
+	<div class="col-xs-4">
+		<% if brokers[1] %>
+			<% broker = brokers[1] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-4px;" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+
+	<div class="col-xs-4">
+		<% if brokers[2] %>
+			<% broker = brokers[2] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-4px;" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+
+<div class="row" style="max-width: 100%; display:block; height: auto;">
+	<div class="col-xs-4">
+		<% if brokers[3] %>
+			<% broker = brokers[3] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+
+	<div class="col-xs-4">
+		<% if brokers[4] %>
+			<% broker = brokers[4] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+
+	<div class="col-xs-4">
+		<% if brokers[5] %>
+			<% broker = brokers[5] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+
+<div class="row" style="max-width: 100%; display:block; height: auto;">	
+	<div class="col-xs-4">
+		<% if brokers[6] %>
+			<% broker = brokers[6] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+
+	<div class="col-xs-4">
+		<% if brokers[7] %>
+			<% broker = brokers[7] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+
+	<div class="col-xs-4">
+		<% if brokers[8] %>
+			<% broker = brokers[8] %>
+			<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+				<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+				<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+			<% end %>
+			<% if current_user && current_user.is_admin %>
+				<a href="/brokers/<%= broker[:id] %>/edit">
+					<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+				</a>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+
+	<div class="row" style="max-width: 100%; display:block; height: auto;">	
+		<div class="col-xs-4">
+			<% if brokers[9] %>
+				<% broker = brokers[9] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[10] %>
+				<% broker = brokers[10] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[11] %>
+				<% broker = brokers[11] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+	</div>
+
+	<div class="row" style="max-width: 100%; display:block; height: auto;">	
+		<div class="col-xs-4">
+			<% if brokers[12] %>
+				<% broker = brokers[12] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[13] %>
+				<% broker = brokers[13] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[14] %>
+				<% broker = brokers[14] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[15] %>
+				<% broker = brokers[15] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[16] %>
+				<% broker = brokers[16] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[17] %>
+				<% broker = brokers[17] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[18] %>
+				<% broker = brokers[18] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[19] %>
+				<% broker = brokers[19] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4">
+			<% if brokers[20] %>
+				<% broker = brokers[20] %>
+				<%= link_to broker, {:style=>"text-decoration:none; color:black"} do %>
+					<img style="font-size:17px; border:solid; padding:10px; margin:11px; text-align:center; height:242px; width: 225px; margin-top:-30px" src="<%= broker[:portrait] %>" alt="http://www.placecage.com/200/300">
+					<p style="font-size:17px; margin:11px; text-align:center; margin-bottom:60px; margin-top:0px"><%= broker[:first_name] %> <%=broker[:last_name]%></p>
+				<% end %>
+				<% if current_user && current_user.is_admin %>
+					<a href="/brokers/<%= broker[:id] %>/edit">
+						<button class="btn btn-primary" style="margin-top:-98px;">Edit Broker</button>
+					</a>
+				<% end %>
+			<% end %>
+		</div>
+
+	</div>

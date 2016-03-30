@@ -1,0 +1,69 @@
+<h2 style="margin-top: -5px; margin-bottom: 41px; font-family:'Century Gothic',CenturyGothic,AppleGothic,sans-serif;">North Jersey's Premier Real Estate Firm</h2>
+
+<div class="span8 welcome-image">
+	<div id="myCarouselHome" class="carousel slide">
+		<!-- Saving featured listings to variable -->
+		<% featured_listings = Listing.all.where(is_featured:true) %>
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+		</ol>
+		<!-- Carousel items -->
+		<div class="carousel-inner">
+			<% featured_listings.each do |current_listing| %>
+			<% if current_listing === featured_listings.first %>
+			<div class="active item" style="height:400px">
+				<img src="<%= current_listing.asset1 %>" alt="http://www.townrealestate.com/images/ListingPhotos/wmt_94470_102235.jpg" style="height:400px; width: 100%;">
+				<h3 style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; position: relative; bottom: 604px; background:black; opacity:0.65; padding:10px; color: white; "><%= current_listing.address %> | <%= current_listing.city.capitalize %>, <%= current_listing.state.upcase %></h3>
+			</div>
+			<% else %>
+			<div class="item" style="height:400px">
+				<img src="<%= current_listing.asset1 %>" alt="http://www.townrealestate.com/images/ListingPhotos/wmt_94470_102237.jpg" style="height:400px; width: 100%;">
+				<h3 style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; position: relative; bottom: 604px; background:black; opacity:0.65; padding:10px; color: white; "><%= current_listing.address %> | <%= current_listing.city.capitalize %>, <%= current_listing.state.upcase %></h3>	
+			</div>
+			<% end %>
+			<% end %>
+		</div>
+	</div>
+
+
+	<!-- Carousel nav -->
+	<a class="carousel-control left" href="#myCarouselHome" data-slide="prev" style="line-height: 416px; height: 400px; font-size: 46px; padding-right: 60px;">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarouselHome" data-slide="next" style="line-height: 416px; height: 400px; font-size: 46px; padding-left: 62px;">&rsaquo;</a>
+</div>
+
+
+<div style="margin-bottom:35px"></div>
+<hr>
+
+<div class="col-xs-4">
+	<h6>Facbook Feed</h6>
+	<div class="fb-page" data-href="https://www.facebook.com/Ridgeco-Properties-Inc-1674864529434676/?fref=ts" data-width="300" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+		<div class="fb-xfbml-parse-ignore">
+			<blockquote cite="https://www.facebook.com/Ridgeco-Properties-Inc-1674864529434676/?fref=ts">
+				<a href="https://www.facebook.com/Ridgeco-Properties-Inc-1674864529434676/?fref=ts">Facebook</a>
+			</blockquote>
+		</div>
+	</div>
+</div>
+
+<div class="col-xs-4">
+	<h6>Instagram Feed</h6>
+	<blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+		<div style="padding:8px;">
+<!-- SnapWidget -->
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/bd/?u=cmlkZ2Vjb3Byb3BlcnRpZXN8aW58MjAwfDF8Mnx8eWVzfDV8bm9uZXx8eWVzfHllcw==&ve=100316" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+		</div>
+	</blockquote>
+	<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+
+<div class="col-xs-4">
+	<h6>Twitter Feed</h6>
+	<a class="twitter-timeline" href="https://twitter.com/Ridgecoinfo" height="800" width="300" data-widget-id="699988688755912705">Tweets by @Ridgecoinfo</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+</div>
