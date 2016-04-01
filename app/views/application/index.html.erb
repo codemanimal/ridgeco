@@ -15,12 +15,12 @@
 			<% featured_listings.each do |current_listing| %>
 			<% if current_listing === featured_listings.first %>
 			<div class="active item" style="height:400px">
-				<img src="<%= current_listing.asset2 %>" alt="http://www.townrealestate.com/images/ListingPhotos/wmt_94470_102235.jpg" style="height:400px; width: 100%;">
+				<img src="<%= current_listing.asset2 %>" alt="" style="height:400px; width: 100%;">
 				<h3 style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; position: relative; bottom: 604px; background:black; opacity:0.65; padding:10px; color: white; "><%= current_listing.address %> | <%= current_listing.city.capitalize %>, <%= current_listing.state.upcase %></h3>
 			</div>
 			<% else %>
 			<div class="item" style="height:400px">
-				<img src="<%= current_listing.asset2 %>" alt="http://www.townrealestate.com/images/ListingPhotos/wmt_94470_102237.jpg" style="height:400px; width: 100%;">
+				<img src="<%= current_listing.asset2 %>" alt="" style="height:400px; width: 100%;">
 				<h3 style="font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif; position: relative; bottom: 604px; background:black; opacity:0.65; padding:10px; color: white; "><%= current_listing.address %> | <%= current_listing.city.capitalize %>, <%= current_listing.state.upcase %></h3>	
 			</div>
 			<% end %>
