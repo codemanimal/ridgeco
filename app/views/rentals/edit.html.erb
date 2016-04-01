@@ -4,10 +4,16 @@
 	<%= simple_form_for @listing, :html => {:class => 'form-horizontal'} do |f| %>
 		<div>
 			<p>
-				<%= f.input :asset1, label: 'Asset 1', :input_html => { :value => @listing.asset1 } %>
-				<%= f.input :asset2, label: 'Asset 2', :input_html => { :value => @listing.asset2 } %>
-				<%= f.input :asset3, label: 'Asset 3', :input_html => { :value => @listing.asset3 } %>
-				<%= f.input :asset4, label: 'Asset 4', :input_html => { :value => @listing.asset4 } %>
+                <%= f.input :asset1, label: 'Video', :input_html => { :value => @listing.asset1 } %>
+                <%= f.input :asset2, label: 'photo 1', :input_html => { :value => @listing.asset2 } %>
+                <%= f.input :asset3, label: 'photo 2', :input_html => { :value => @listing.asset3 } %>
+                <%= f.input :asset4, label: 'photo 3', :input_html => { :value => @listing.asset4 } %>
+                <%= f.input :asset5, label: 'photo 4', :input_html => { :value => @listing.asset5 } %>
+                <%= f.input :asset6, label: 'photo 5', :input_html => { :value => @listing.asset6 } %>
+                <%= f.input :asset7, label: 'photo 6', :input_html => { :value => @listing.asset7 } %>
+                <%= f.input :asset8, label: 'photo 7', :input_html => { :value => @listing.asset8 } %>
+                <%= f.input :asset9, label: 'photo 8', :input_html => { :value => @listing.asset9 } %>
+                <%= f.input :asset10, label: 'photo 9', :input_html => { :value => @listing.asset10 } %>
 			</p>
 		</div>
 		<hr>
