@@ -64,7 +64,7 @@
 <% rentals.each do |rental| %>
 	<div class="center-block" style="margin-bottom:25px; margin-top:-10px">
 		<%= link_to "/rentals/#{rental[:id]}", {:style=>"text-decoration:none"} do %>
-			<img src="<%= rental[:asset2] %>" alt="http://www.sailservices.org/house_outline.gif" style="width:530px; height:315px; max-width:100%; margin-top: -10px">
+			<img src="<%= rental[:asset2] %>" alt="" style="width:530px; height:315px; max-width:100%; margin-top: -10px">
 			<% if rental.is_sold? %>
 				<p style=" width: 50%; position: relative; margin: auto; font-size: 40px; top: 66px; background-color: black; color: red; opacity:.8">SOLD</p>
 			<% end %>
