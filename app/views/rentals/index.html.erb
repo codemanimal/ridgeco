@@ -75,12 +75,12 @@
 				<p style=" width: 50%; position: relative; margin: auto; font-size: 40px; top: 66px; background-color: black; color: red; opacity:.8">Under Attorney Review</p>
 			<% end %>
 			<div class="center-block" style="max-width: 100%; display:block; height: auto; border: solid; padding: 10px; width: 750px; margin-left: 100px; opacity: .9; border-color:white; color:black; border-width: 2px; font-size:17px; position:relative; top: -47px; background-color:white">
-				<span style="position: relative; left: -80px">
+				<span style="position: absolute; left: 100px">
 					<%= rental[:address] %> | 
 					<%= rental[:city] %>, 
 					<%= rental[:state] %>
 				</span>
-				<span style="position:relative; left:50px">
+				<span style="position:relative; left:200px">
 					<%= rental[:price].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse.prepend('$') %>
 				</span>					
 			</div>

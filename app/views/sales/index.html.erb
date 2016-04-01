@@ -82,12 +82,12 @@
 			<% end %>
 			<img src="<%= sale[:asset2] %>" alt="http://www.sailservices.org/house_outline.gif" style="width:530px; height:315px; max-width:100%; margin-top: -10px">
 			<div class="center-block" style="max-width: 100%; display:block; height: auto; border: solid; padding: 10px; width: 750px; margin-left: 100px; opacity: .9; border-color:white; color:black; border-width: 2px; font-size:17px; position:relative; top: -47px; background-color:white">
-				<span style="position: relative; left: -80px">
+				<span style="position: absolute; left: 100px">
 					<%= sale[:address] %> | 
 					<%= sale[:city] %>, 
 					<%= sale[:state] %>
 				</span>
-				<span style="position:relative; left:50px">
+				<span style="position:relative; left:200px">
 					<%= sale[:price].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse.prepend('$') %>
 				</span>
 			</div>
