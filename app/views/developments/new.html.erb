@@ -1,10 +1,16 @@
 	<%= simple_form_for @listing, :html => {:class => 'form-horizontal'} do |f| %>
 		<div>
 			<p>
-				<%= f.input :asset1, label: 'Asset 1'  %>
-				<%= f.input :asset2, label: 'Asset 2'  %>
-				<%= f.input :asset3, label: 'Asset 3'  %>
-				<%= f.input :asset4, label: 'Asset 4'  %>
+                <%= f.input :asset1, label: 'Video'  %>
+                <%= f.input :asset2, label: 'Photo 1'  %>
+                <%= f.input :asset3, label: 'Photo 2'  %>
+                <%= f.input :asset4, label: 'Photo 3'  %>
+                <%= f.input :asset5, label: 'Photo 4'  %>
+                <%= f.input :asset6, label: 'Photo 5'  %>
+                <%= f.input :asset7, label: 'Photo 6'  %>
+                <%= f.input :asset8, label: 'Photo 7'  %>
+                <%= f.input :asset9, label: 'Photo 8'  %>
+                <%= f.input :asset10, label: 'Photo 9'  %>
 			</p>
 		</div>
 		<hr>
@@ -21,7 +27,7 @@
                 <% end %>
             </p>
             <p>
-                <%= f.input :name, label: 'Name' %>
+                <hr>
                 <%= f.input :address, label: 'Address' %>
                 <%= f.input :unit, label: 'Unit' %>
                 <%= f.input :city, label: 'City'  %> 
@@ -33,11 +39,17 @@
                 <%= f.input :sqft, label: 'Square Feet'  %>
                 <%= f.input :detail, label: 'Details' %>
                 <%= f.input :feature, label: 'Feature' %>
-                <%= f.input :mls_id, label: 'MLS I' %>
+                <%= f.input :mls_id, label: 'MLS ID' %>
                 <%= f.input :mls_url, label: 'MLS Url' %>
+                <hr>
                 <%= f.input :is_rental, label: 'Is Rental?', as: :boolean  %>
                 <%= f.input :is_sale, label: 'Is Sale?', as: :boolean  %>
-                <%= f.input :is_development, label: 'Is listing?', as: :boolean  %>
+                <%= f.input :is_development, label: 'Is Development?', as: :boolean  %>
+                <hr>
+                <%= f.input :is_sold?, label: 'Is Sold?', as: :boolean  %>
+                <%= f.input :is_in_contract?, label: 'Is In Contract?', as: :boolean  %>
+                <%= f.input :is_under_review?, label: 'Is Under Review?', as: :boolean  %>
+                <hr>
                 <%= f.input :is_featured, label: 'Is Featured?', as: :boolean  %>
             </p>
         </div>

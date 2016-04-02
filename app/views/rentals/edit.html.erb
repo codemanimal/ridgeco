@@ -62,7 +62,7 @@
         <%= f.input :description, label: 'Description', :input_html => { :value => @listing.description, rows: "15" } %>
         <br>
         <div>
-            <%= f.button :submit, 'Update Listing', :controller => 'developments', :action => 'update', :class => "btn btn-primary", :data => {confirm: "Are you sure you want to permanently update this listing?"} %>
+            <%= f.button :submit, 'Update Listing', :controller => 'rentals', :action => 'update', :class => "btn btn-primary", :data => {confirm: "Are you sure you want to permanently update this listing?"} %>
         </div>
     <% end %>
         <br>
