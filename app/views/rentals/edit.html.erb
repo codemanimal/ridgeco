@@ -49,11 +49,14 @@
                     <%= f.input :sqft, label: 'Square Feet', :input_html => { :value => @listing.sqft } %>
                     <%= f.input :detail, label: 'Details', :input_html => { :value => @listing.detail.capitalize }%>
                     <%= f.input :feature, label: 'Feature', :input_html => { :value => @listing.feature.capitalize }%>
-                    <%= f.input :mls_id, label: 'MLS I', :input_html => { :value => @listing.mls_id }%>
+                    <%= f.input :mls_id, label: 'MLS ID', :input_html => { :value => @listing.mls_id }%>
                     <%= f.input :mls_url, label: 'MLS Url', :input_html => { :value => @listing.mls_url }%>
                     <%= f.input :is_rental, label: 'Is Rental?', as: :boolean, :input_html => { :value => @listing.is_rental } %>
                     <%= f.input :is_sale, label: 'Is Sale?', as: :boolean, :input_html => { :value => @listing.is_sale } %>
                     <%= f.input :is_development, label: 'Is Development?', as: :boolean, :input_html => { :value => @listing.is_development } %>
+                    <%= f.input :is_sold?, label: 'Is Sold?', as: :boolean, :input_html => { :value => @listing.is_sold? } %>
+                    <%= f.input :is_in_contract?, label: 'Is in Contract?', as: :boolean, :input_html => { :value => @listing.is_in_contract? } %>
+                    <%= f.input :is_under_review?, label: 'Is Under Attorney Review?', as: :boolean, :input_html => { :value => @listing.is_under_review? } %>
                     <%= f.input :is_featured, label: 'Is Featured?', as: :boolean, :input_html => { :value => @listing.is_featured } %>
                 </p>
             </div>
