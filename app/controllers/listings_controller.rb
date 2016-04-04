@@ -15,6 +15,12 @@ class ListingsController < ApplicationController
 						:asset2,
 						:asset3,
 						:asset4,
+						:asset5,
+						:asset6,
+						:asset7,
+						:asset8,
+						:asset9,
+						:asset10,
 						:address,
 						:name,
 						:unit,
@@ -33,7 +39,10 @@ class ListingsController < ApplicationController
 						:is_sale,
 						:is_rental,
 						:is_development,
-						:is_featured
+						:is_featured,
+						:is_sold?,
+						:is_in_contract?,
+						:is_under_review?
 		      	)
 		@listing = Listing.new(@listing_params)
 		@listing.save
@@ -61,6 +70,12 @@ class ListingsController < ApplicationController
 			:asset2 => @listing_params[:asset2],
 			:asset3 => @listing_params[:asset3],
 			:asset4 => @listing_params[:asset4],
+			:asset5 => @listing_params[:asset5],
+			:asset6 => @listing_params[:asset6],
+			:asset7 => @listing_params[:asset7],
+			:asset8 => @listing_params[:asset8],
+			:asset9 => @listing_params[:asset9],
+			:asset10 => @listing_params[:asset10],
 			:address => @listing_params[:address],
 			:name => @listing_params[:name],
 			:unit => @listing_params[:unit],
@@ -79,8 +94,10 @@ class ListingsController < ApplicationController
 			:is_sale => @listing_params[:is_sale],
 			:is_rental => @listing_params[:is_rental],
 			:is_development => @listing_params[:is_development],
-			:is_featured => @listing_params[:is_featured]
-
+			:is_featured => @listing_params[:is_featured],
+			:is_sold? => @listing_params[:is_sold?],
+			:is_in_contract? => @listing_params[:is_in_contract?],
+			:is_under_review? => @listing_params[:is_under_review?]
 		})
 		params.each do |(key, value)|
 			if Broker.exists?(username: key) && value == "true"
