@@ -42,7 +42,7 @@ Rails.application.routes.draw do
   get 'rentals/:id' => 'rentals#show'
   get 'rentals' => 'rentals#create'
   get 'rentals/:id/edit' => 'rentals#edit'
-  put '/deveopments/:id' => 'rentals#update'
+  put '/rentals/:id' => 'rentals#update'
   delete '/rentals/:id' => 'rentals#destroy'
 
   get 'sales' => 'sales#index'
@@ -50,7 +50,7 @@ Rails.application.routes.draw do
   get 'sales/:id' => 'sales#show'
   get 'sales' => 'sales#create'
   get 'sales/:id/edit' => 'sales#edit'
-  put '/deveopments/:id' => 'sales#update'
+  put '/sales/:id' => 'sales#update'
   delete '/sales/:id' => 'sales#destroy'
 
 
