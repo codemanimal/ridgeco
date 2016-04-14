@@ -1,8 +1,8 @@
-<% if @development.is_sold? %>
+<% if @development.is_sold %>
 	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %>  - SOLD</h2>
-<% elsif @development.is_in_contract? %>
+<% elsif @development.is_in_contract %>
 	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %>  - IN CONTRACT</h2>
-<% elsif @development.is_under_review? %>
+<% elsif @development.is_under_review %>
 	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %>  - UNDER ATTORNEY REVIEW</h2>
 <% else %>
 	<h2 style="text-align:center; margin-top:-5px; font-family:Century Gothic,CenturyGothic, AppleGothic,sans-serif"><%= @development.address.upcase %></h2>

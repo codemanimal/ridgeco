@@ -17,9 +17,9 @@ class CreateListings < ActiveRecord::Migration
     	t.text :description
     	t.integer :mls_id
     	t.text :mls_url
-        t.boolean :is_sold?
-        t.boolean :is_in_contract?
-        t.boolean :is_under_review?
+        t.boolean :is_sold
+        t.boolean :is_in_contract
+        t.boolean :is_under_review
     	t.text :asset1
     	t.text :asset2
     	t.text :asset3

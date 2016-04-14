@@ -40,9 +40,9 @@ class ListingsController < ApplicationController
 						:is_rental,
 						:is_development,
 						:is_featured,
-						:is_sold?,
-						:is_in_contract?,
-						:is_under_review?
+						:is_sold,
+						:is_in_contract,
+						:is_under_review
 		      	)
 		@listing = Listing.new(@listing_params)
 		@listing.save
@@ -95,9 +95,9 @@ class ListingsController < ApplicationController
 			:is_rental => @listing_params[:is_rental],
 			:is_development => @listing_params[:is_development],
 			:is_featured => @listing_params[:is_featured],
-			:is_sold? => @listing_params[:is_sold?],
-			:is_in_contract? => @listing_params[:is_in_contract?],
-			:is_under_review? => @listing_params[:is_under_review?]
+			:is_sold => @listing_params[:is_sold],
+			:is_in_contract => @listing_params[:is_in_contract],
+			:is_under_review => @listing_params[:is_under_review]
 		})
 		params.each do |(key, value)|
 			if Broker.exists?(username: key) && value == "true"

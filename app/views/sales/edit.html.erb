@@ -56,9 +56,9 @@
                     <%= f.input :is_sale, label: 'Is Sale?', as: :boolean, :input_html => { :value => @listing.is_sale } %>
                     <%= f.input :is_development, label: 'Is Development?', as: :boolean, :input_html => { :value => @listing.is_development } %>
                     <hr>
-                    <%= f.input :is_sold?, label: 'Is Sold?', as: :boolean, :input_html => { :value => @listing.is_sold? } %>
-                    <%= f.input :is_in_contract?, label: 'Is in Contract?', as: :boolean, :input_html => { :value => @listing.is_in_contract? } %>
-                    <%= f.input :is_under_review?, label: 'Is Under Attorney Review?', as: :boolean, :input_html => { :value => @listing.is_under_review? } %>
+                    <%= f.input :is_sold, label: 'Is Sold?', as: :boolean, :input_html => { :value => @listing.is_sold } %>
+                    <%= f.input :is_in_contract, label: 'Is in Contract?', as: :boolean, :input_html => { :value => @listing.is_in_contract } %>
+                    <%= f.input :is_under_review, label: 'Is Under Attorney Review?', as: :boolean, :input_html => { :value => @listing.is_under_review } %>
                     <hr>
                     <%= f.input :is_featured, label: 'Is Featured?', as: :boolean, :input_html => { :value => @listing.is_featured } %>
                 </p>

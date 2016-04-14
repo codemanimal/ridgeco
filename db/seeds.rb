@@ -372,7 +372,10 @@
 #     :address=> "28 Grant Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1532162"
+#     :mls_id=> "1532162",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "3149000",
@@ -404,7 +407,10 @@
 #     :address=> "98 Anderson Ave",
 #     :city=> "Demarest",
 #     :zip=> "07627",
-#     :mls_id=> "1514110"
+#     :mls_id=> "1514110",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "1679000",
@@ -436,7 +442,10 @@
 #     :address=> "1069 Cumbermeade Rd",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1527858"
+#     :mls_id=> "1527858",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "759000",
@@ -468,7 +477,10 @@
 #     :address=> "1615 Valley St",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1524198"
+#     :mls_id=> "1524198",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "419000",
@@ -500,7 +512,10 @@
 #     :address=> "30 Paroubek St",
 #     :city=> "Little Ferry",
 #     :zip=> "07643",
-#     :mls_id=> "1517352"
+#     :mls_id=> "1517352",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "1450000",
@@ -532,7 +547,10 @@
 #     :address=> "445 4th St",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1507124"
+#     :mls_id=> "1507124",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "14109000",
@@ -564,7 +582,10 @@
 #     :address=> "510 Shaler Blvd",
 #     :city=> "Ridgefield",
 #     :zip=> "07657",
-#     :mls_id=> "1532348"
+#     :mls_id=> "1532348",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "579000",
@@ -596,7 +617,10 @@
 #     :address=> "21 Marion Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1523249"
+#     :mls_id=> "1523249",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "579000",
@@ -628,7 +652,10 @@
 #     :address=> "23 Marion Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1523250"
+#     :mls_id=> "1523250",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "599000",
@@ -660,7 +687,10 @@
 #     :address=> "434 Nelson Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1445398"
+#     :mls_id=> "1445398",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "649000",
@@ -692,7 +722,10 @@
 #     :address=> "757 West End Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1533943"
+#     :mls_id=> "1533943",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "649000",
@@ -724,7 +757,10 @@
 #     :address=> "759 West End Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1533947"
+#     :mls_id=> "1533947",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "650000",
@@ -756,7 +792,10 @@
 #     :address=> "366 Aurora Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1523372"
+#     :mls_id=> "1523372",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "659000",
@@ -788,7 +827,10 @@
 #     :address=> "717 West End Ave A",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1515031"
+#     :mls_id=> "1515031",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "659000",
@@ -820,7 +862,10 @@
 #     :address=> "717 West End Ave B",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1515035"
+#     :mls_id=> "1515035",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "975000",
@@ -852,7 +897,10 @@
 #     :address=> "914 Undercliff Ave 5",
 #     :city=> "Edgewater",
 #     :zip=> "07020",
-#     :mls_id=> "1522121"
+#     :mls_id=> "1522121",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "1039000",
@@ -884,7 +932,10 @@
 #     :address=> "16 Edgewater Pl",
 #     :city=> "Edgewater",
 #     :zip=> "07020",
-#     :mls_id=> "1533784"
+#     :mls_id=> "1533784",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "1099000",
@@ -916,7 +967,10 @@
 #     :address=> "17 Lasher Ln",
 #     :city=> "Edgewater",
 #     :zip=> "07020",
-#     :mls_id=> "1511747"
+#     :mls_id=> "1511747",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "1189000",
@@ -948,7 +1002,10 @@
 #     :address=> "516 Undercliff Ave",
 #     :city=> "Edgewater",
 #     :zip=> "07020",
-#     :mls_id=> "1502085"
+#     :mls_id=> "1502085",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "599900",
@@ -980,7 +1037,10 @@
 #     :address=> "408 West St",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1531155"
+#     :mls_id=> "1531155",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "659000",
@@ -1012,7 +1072,10 @@
 #     :address=> "2428 3rd St",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1511199"
+#     :mls_id=> "1511199",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "699000",
@@ -1044,7 +1107,10 @@
 #     :address=> "2043 Marguerite St A",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1521952"
+#     :mls_id=> "1521952",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "699000",
@@ -1076,7 +1142,10 @@
 #     :address=> "2043 Marguerite St B",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1521953"
+#     :mls_id=> "1521953",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1108,7 +1177,10 @@
 #     :address=> "420 Jane St A",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1522991"
+#     :mls_id=> "1522991",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1140,7 +1212,10 @@
 #     :address=> "420 Jane St B",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1523946"
+#     :mls_id=> "1523946",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1172,7 +1247,10 @@
 #     :address=> "515 Summit Ave",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1524220"
+#     :mls_id=> "1524220",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1204,7 +1282,10 @@
 #     :address=> "517 Summit Ave",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1524221"
+#     :mls_id=> "1524221",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1236,7 +1317,10 @@
 #     :address=> "418 Jane St A",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1441945"
+#     :mls_id=> "1441945",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1268,7 +1352,10 @@
 #     :address=> "418 Jane St B",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1441946"
+#     :mls_id=> "1441946",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "769000",
@@ -1300,7 +1387,10 @@
 #     :address=> "1641 Federspiel St A",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1523425"
+#     :mls_id=> "1523425",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "769000",
@@ -1332,7 +1422,10 @@
 #     :address=> "2457 Leighton St A",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1513478"
+#     :mls_id=> "1513478",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "769000",
@@ -1364,7 +1457,10 @@
 #     :address=> "1233 16th St B",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1514917"
+#     :mls_id=> "1514917",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "789000",
@@ -1396,7 +1492,10 @@
 #     :address=> "1643 Federspiel St B",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1523428"
+#     :mls_id=> "1523428",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "789000",
@@ -1428,7 +1527,10 @@
 #     :address=> "1645 Federspiel St C",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1523429"
+#     :mls_id=> "1523429",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "799000",
@@ -1460,7 +1562,10 @@
 #     :address=> "141 English St A",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1527864"
+#     :mls_id=> "1527864",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "799000",
@@ -1492,7 +1597,10 @@
 #     :address=> "1635 Federspiel St",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1527868"
+#     :mls_id=> "1527868",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "829000",
@@ -1524,7 +1632,10 @@
 #     :address=> "414 Center St A",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1519212"
+#     :mls_id=> "1519212",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "839000",
@@ -1556,7 +1667,10 @@
 #     :address=> "1633 Federspiel St",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1527867"
+#     :mls_id=> "1527867",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "539900",
@@ -1588,7 +1702,10 @@
 #     :address=> "26B E Washington Pl b",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1437970"
+#     :mls_id=> "1437970",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "569000",
@@ -1620,7 +1737,10 @@
 #     :address=> "60 E Edsall Blvd B",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1532832"
+#     :mls_id=> "1532832",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "659000",
@@ -1652,7 +1772,10 @@
 #     :address=> "301 E Harriet Ave A",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1514726"
+#     :mls_id=> "1514726",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "675000",
@@ -1684,7 +1807,10 @@
 #     :address=> "463 8th St B",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1531809"
+#     :mls_id=> "1531809",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "699000",
@@ -1716,7 +1842,10 @@
 #     :address=> "329 5th St A",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1532358"
+#     :mls_id=> "1532358",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "699000",
@@ -1748,7 +1877,10 @@
 #     :address=> "329 5th St B",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1532359"
+#     :mls_id=> "1532359",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "719000",
@@ -1780,7 +1912,10 @@
 #     :address=> "229 E Columbia Ave A",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1521370"
+#     :mls_id=> "1521370",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1812,7 +1947,10 @@
 #     :address=> "445A 4th St",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1507125"
+#     :mls_id=> "1507125",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "729000",
@@ -1844,7 +1982,10 @@
 #     :address=> "445B 4th St",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1507126"
+#     :mls_id=> "1507126",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "739000",
@@ -1876,7 +2017,10 @@
 #     :address=> "36 E Edsall Ave A",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1525096"
+#     :mls_id=> "1525096",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "739000",
@@ -1908,7 +2052,10 @@
 #     :address=> "36 E Edsall Ave B",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1525098"
+#     :mls_id=> "1525098",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "739000",
@@ -1940,7 +2087,10 @@
 #     :address=> "40 E Edsall Ave A",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1525141"
+#     :mls_id=> "1525141",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "749000",
@@ -1972,7 +2122,10 @@
 #     :address=> "542 2nd Street - A",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1534545"
+#     :mls_id=> "1534545",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "749000",
@@ -2004,7 +2157,10 @@
 #     :address=> "542 2nd Street - B",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1534546"
+#     :mls_id=> "1534546",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "799000",
@@ -2036,7 +2192,10 @@
 #     :address=> "66 W Oakdene Ave A",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1532841"
+#     :mls_id=> "1532841",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "799000",
@@ -2068,7 +2227,10 @@
 #     :address=> "74 W Oakdene Ave B",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1534540"
+#     :mls_id=> "1534540",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "799000",
@@ -2100,7 +2262,10 @@
 #     :address=> "66 W Oakdene Ave B",
 #     :city=> "Palisades Park",
 #     :zip=> "07650",
-#     :mls_id=> "1532843"
+#     :mls_id=> "1532843",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "4750",
@@ -2132,7 +2297,10 @@
 #     :address=> "914 Undercliff Ave 5",
 #     :city=> "Edgewater",
 #     :zip=> "07020",
-#     :mls_id=> "1527351"
+#     :mls_id=> "1527351",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "2000",
@@ -2164,7 +2332,10 @@
 #     :address=> "141 Old Palisade Rd 2601",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1530626"
+#     :mls_id=> "1530626",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "3141",
@@ -2196,7 +2367,10 @@
 #     :address=> "408 West St",
 #     :city=> "Fort Lee",
 #     :zip=> "07024",
-#     :mls_id=> "1533367"
+#     :mls_id=> "1533367",
+#     :is_sold=>false,
+#     :is_in_contract=>false,
+#     :is_under_review=>true
 #   },
 #   {
 #     :price=> "1249000",
@@ -2228,7 +2402,10 @@
 #     :address=> "690 Anderson Ave",
 #     :city=> "Cliffside Park",
 #     :zip=> "07010",
-#     :mls_id=> "1514177"
+#     :mls_id=> "1514177",
+#     :is_sold=>false,
+#     :is_in_contract=>true,
+#     :is_under_review=>false
 #   },
 #   {
 #     :price=> "950000",
@@ -2260,7 +2437,10 @@
 #     :address=> "138 Broad Ave",
 #     :city=> "Fairview",
 #     :zip=> "07022",
-#     :mls_id=> "1517867"
+#     :mls_id=> "1517867",
+#     :is_sold=>true,
+#     :is_in_contract=>false,
+#     :is_under_review=>false
 #   }
 # ]
 
@@ -2281,6 +2461,9 @@
 #         feature: listing[:feature],
 #         description: listing[:description],
 #         mls_id: listing[:mls_id],
+#         is_sold: listing[:is_sold],
+#         is_in_contract: listing[:is_in_contract],
+#         is_under_review: listing[:is_under_review],
 #         mls_url: listing[:mls_url],
 #         asset1: listing[:asset1],
 #         asset2: listing[:asset2],
