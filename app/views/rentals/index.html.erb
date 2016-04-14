@@ -73,6 +73,7 @@
 			<% if rental.is_under_review %>
 				<p style=" width: 50%; position: relative; margin: auto; font-size: 40px; top: 66px; background-color: black; color: red; opacity:.8">Under Attorney Review</p>
 			<% end %>
+			<img src="<%= rental[:asset2] %>" alt="" style="width:530px; height:315px; max-width:100%; margin-top: -10px">
 			<div class="center-block" style="max-width: 100%; display:block; height: auto; border: solid; padding: 10px; width: 750px; margin-left: 100px; opacity: .9; border-color:white; color:black; border-width: 2px; font-size:17px; position:relative; top: -47px; background-color:white">
 				<span style="position: absolute; left: 100px">
 					<%= rental[:address] %> | 
