@@ -18,13 +18,9 @@ Or leave us a message below and we'll get back to you right away:
 <div align="left">	
 	<%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
 		<%= f.input :name, label: 'Name:', placeholder: ' Required', :required => true %>
-		<br>
 		<%= f.input :email, label: 'Email:', placeholder: ' Required', :required => true %>
-		<br>
 		<%= f.input :phone, label: 'Phone Number:', placeholder: ' Required', :required => true %>
-		<br>
 		<%= f.input :listing_id, label: 'Listing ID:', placeholder: ' Optional' %>
-		<br>
 		<%= f.input :message, label: 'Message:', placeholder: ' Optional', :as => :text%>
 		<br>
 		<div class="hidden">
