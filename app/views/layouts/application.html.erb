@@ -6,9 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-
 <body>
-
 	<div id="fb-root"></div>
 	<script>
 		(function(d, s, id) {
@@ -46,7 +44,6 @@
 			<div class="col-xs-10"><%= yield %></div>
 			<div class="col-xs-1"></div>
 		</div>
-
 		<div class="navbar navbar-default navbar-fixed-bottom" style="font-size:18px; font-family:'Century Gothic',CenturyGothic,AppleGothic,sans-serif; background-color: rgba(252, 252, 252, 1)">
 			<div class="container">
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -55,16 +52,15 @@
 					<span class='icon-bar'></span>
 				</button>
 				<div class="collapse navbar-collapse navHeaderCollapse">
-					<ul class="nav navbar-nav" style="margin-left:436px">
-						<li><%= link_to 'About', about_path, :style=>"margin-left:-90px; margin-right:90px" %></li>
-						<li><%= link_to 'Team', team_path %></li>
-						<li><%= link_to 'Contact', contacts_path, :style=>"margin-left:90px" %></li>
+					<ul class="footer nav navbar-nav">
+						<li class="footer__links"><%= link_to 'About', about_path %></li>
+						<li class="footer__links"><%= link_to 'Team', team_path %></li>
+						<li class="footer__links"><%= link_to 'Contact', contacts_path %></li>
+						<li class="footer__links"><%= link_to 'Privacy Policy', policies_privacy_path %><li>
 					</ul>
 				</div>
 			</div>
 		</div>
-
 	</div>
-
 </body>
 </html>

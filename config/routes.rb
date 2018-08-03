@@ -37,6 +37,8 @@ Rails.application.routes.draw do
   put '/deveopments/:id' => 'developments#update'
   delete '/developments/:id' => 'developments#destroy'
 
+  get '/policies/privacy', to: 'policies#privacy_policy'
+
   get 'rentals' => 'rentals#index'
   get 'rentals/new' => 'rentals#new'
   get 'rentals/:id' => 'rentals#show'
