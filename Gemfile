@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
@@ -37,8 +37,6 @@ gem 'unicorn'
 gem 'backbars'
 gem 'httparty'
 
-gem 'rails-assets-underscore', source: 'https://rails-assets.org'
-gem 'rails-assets-backbone', source: 'https://rails-assets.org'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
