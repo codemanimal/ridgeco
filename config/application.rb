@@ -6,6 +6,23 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+# catch the incorrect pg version check, replace it with one that will pass
+module Kernel
+  def gem_with_pg_fix(dep, *reqs)
+    if dep == "pg" && reqs == ["~> 0.15"]
+      reqs = ["~> 1.0"]
+    end
+    gem_without_pg_fix(dep, *reqs)
+  end
+
+  alias_method_chain :gem, :pg_fix
+end
+# pg 1.0 gem has removed these constants, but 4.2 ActiveRecord still expects them
+PGconn   = PG::Connection
+PGresult = PG::Result
+PGError  = PG::Error
+
 module RidgecoApp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
